@@ -1,4 +1,4 @@
-
+# Housing Data Visualization
 This is documentation for the Housing Visualization project, aimed to help realtors/possible homeowners understand housing prices. Instead of having to manually parse thousands of homes from redfin, this program automatically scrapes the website, downloads the data, and visualizes it in an easy to understand format.
 
 ## Why is this important?
