@@ -14,10 +14,10 @@ This is documentation for the Housing Visualization project, aimed to help realt
 # Sample Output
 
 ## From redfin.py
-![Image of redfin](https://github.com/kingan1/Housing-Data-Visualization/blob/master/redfins.png)
+![Image of redfin](/redfins.png)
 
 ## From image.py
-![Image of redfin](https://github.com/kingan1/Housing-Data-Visualization/blob/master/image.png)
+![Image of redfin](/image.png)
 
 # Getting Started
 To be able to run the program, a few libraries need to be installed beforehand.
