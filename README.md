@@ -1,5 +1,5 @@
 # Housing Data Visualization
-This is documentation for the Housing Visualization project, aimed to help realtors/possible homeowners understand housing prices. Instead of having to manually parse thousands of homes from redfin, this program automatically scrapes the website, downloads the data, and visualizes it in an easy to understand format.
+This is documentation for the Housing Visualization project, a beginner project to web scraping and data visualization. Instead of having to manually parse thousands of homes from Redfin (link), this program automatically scrapes the website, downloads the data, and visualizes it in an easy to understand format.
 
 ## Why is this important?
 + Helps clear up complicated housing data
@@ -14,9 +14,13 @@ This is documentation for the Housing Visualization project, aimed to help realt
 # Sample Output
 
 ## From redfin.py
+This picture is a screenshot of the output file, `file.csv`. This Python file scrapes Redfin.com, and downloads information about housing into a .csv file for later use. `redfin.py` transforms the process of having to manually copy data from each page into an automated process that takes under 30 seconds.
 ![Image of redfin](/redfins.png)
 
 ## From image.py
+This image is an example visual from `image.py`. `image.py` takes in the file created in `redfin.py` and processes the data. It then creates 6 visuals exploring such data.
+
+This image is an exploration of houses by latitude and longitude. Each dot represents one house. We then take it one step further, adding a color gradient for the cost of the house. This produces a map that displays both the spread of homes and average prices by latitude.
 ![Image of redfin](/image.png)
 
 # [Getting Started](#getting-started)
