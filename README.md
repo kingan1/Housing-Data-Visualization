@@ -30,9 +30,10 @@ Python is the underlying language of this program. To be able to run anything, P
 2. Navigate to the link that says `Python 3.6.7`
 3. Select `download`
 4. Open a terminal
-5. Run
+5. Type
   `$ python version`
-6. The output should be 
+6. Hit ENTER
+7. The output should be 
    `Python 3.6.7`
    
 As long as the version is above 3.6, the program will function correctly
@@ -48,15 +49,18 @@ XMing is used as a "whiteboard" for our visualizations.
 Selenium is used to scrape websites, where we get our housing data from.
 1. Navigate to the link above
 2. Open a terminal
-    + If pip is not installed on your computer, it can be installed from [here](https://pip.pypa.io/en/stable/installing)
-3. Run the pip command found in Section 1.2
-4. Navigate to section 1.3
-5. Download the Firefox link
+    + If pip is not installed on your computer, it can be installed [here](https://pip.pypa.io/en/stable/installing)
+3. Type this command: `pip install selenium`
+4. Hit ENTER
+5. Navigate to section 1.3 from the link above
+6. Download the Firefox link
 
 To confirm Selenium was downloaded correctly, follow these steps
 1. Open a terminal
 2. Type: `python`
-3. Type: `from selenium import webdriver`
+3. Hit ENTER
+4. Type: `from selenium import webdriver`
+5. Hit ENTER
 
 If this command executes with no errors, Selenium has been installed correctly!
 
@@ -91,7 +95,7 @@ If Matplotlib is installed correctly, there will be no error messages
 
 
 # Running the program
-
+Now that we have all of the libraries downloaded, we are able to start gathering and processing data!
 ## How to run the program
 
 ### Download the source code
@@ -100,22 +104,20 @@ If Matplotlib is installed correctly, there will be no error messages
 
 ### Run redfin.py
 
-Prerequisites: All libraries have been installed
-
 1. Open a terminal
 2. Navigate to where you downloaded the repository
 3. Type this command: `python redfin.py`
 4. Hit ENTER
 
 The output should be: `done`
- + redfin.py creates a web crawler, and opens Redfins page for the RDU area.
+ + `redfin.py` creates a web crawler, initialized to Redfins page for the RDU area.
  + The program then expands the area, clearing all filters as well.
- + The program then downloads the .csv file, renaming it to `file.csv`
- + At the end of running redfin.py, you will have a new file in your folder titled file.csv
+ + The program then downloads a .csv file, renaming it to `file.csv` so it is easier for the next program to find
+ + At the end of running `redfin.py`, you will have a new file in your folder titled `file.csv`
 
 ### Run image.py
 
-Prerequisites: redfin.py has been executed and you have a file.csv file in your folder
+Prerequisites: `redfin.py` has been executed and you have a `file.csv` file in your folder
 
 1. Open a terminal
 2. Navigate to where you downloaded the repository
@@ -123,7 +125,7 @@ Prerequisites: redfin.py has been executed and you have a file.csv file in your 
 4. Hit ENTER
 
 Multiple windows should open, all with different visualizations.
-  + image.py takes in `file.csv` from the previous step, and creates several visualizations
+  + `image.py` takes in `file.csv` from the previous step, and creates several visualizations
   + These visualizations help you understand what the data represents, and explores different types of visuals
   
 # FAQ
