@@ -1,142 +1,93 @@
-# Housing Data Visualization
-This is documentation for the Housing Visualization project, aimed to help realtors/possible homeowners understand housing prices. Instead of having to manually parse thousands of homes from redfin, this program automatically scrapes the website, downloads the data, and visualizes it in an easy to understand format.
+# The Minimal theme
 
-## Why is this important?
-+ Helps clear up complicated housing data
-+ Condenses 10K rows of data into 6 easy to understand visuals
-+ Explores how web scraping can be used in conjunction with data science/processing
+[![Build Status](https://travis-ci.org/pages-themes/minimal.svg?branch=master)](https://travis-ci.org/pages-themes/minimal) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
 
-## Who should use this?
-+ Users who want to explore different visuals
-+ Realtors who want to better understand housing in the RDU area
-+ Programmers who want to learn more about data visualization or web scraping
-  
-# Sample Output
+*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
 
-## From redfin.py
-![Image of redfin](/redfins.png)
+![Thumbnail of minimal](thumbnail.png)
 
-## From image.py
-![Image of redfin](/image.png)
+## Usage
 
-# Getting Started
-To be able to run the program, a few libraries need to be installed beforehand.
+To use the Minimal theme:
 
-## Library installations
+1. Add the following to your site's `_config.yml`:
 
-### Install [Python](https://www.python.org/downloads/release/python-367)
-Python is the underlying language of this program. To be able to run anything, Python must be installed.
-1. Follow the link above.
-2. Navigate to the link that says `Python 3.6.7`
-3. Select `download`
-4. Open a terminal
-5. Type
-  `$ python version`
-6. Hit ENTER
-7. The output should be 
-   `Python 3.6.7`
-   
-As long as the version is above 3.6, the program will function correctly
+    ```yml
+    theme: jekyll-theme-minimal
+    ```
 
-### Install [XMing](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download)
-XMing is used as a "whiteboard" for our visualizations.
-1. Navigate to the link above
-2. Wait for 5 seconds for the download to begin.
-3. Open the executable
-4. Complete the setup wizard
+2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
-### Install [Selenium](https://selenium-python.readthedocs.io/installation.html)
-Selenium is used to scrape websites, where we get our housing data from.
-1. Navigate to the link above
-2. Open a terminal
-    + If pip is not installed on your computer, it can be installed [here](https://pip.pypa.io/en/stable/installing)
-3. Type this command: `pip install selenium`
-4. Hit ENTER
-5. Navigate to section 1.3 from the link above
-6. Download the Firefox link
-
-To confirm Selenium was downloaded correctly, follow these steps
-1. Open a terminal
-2. Type: `python`
-3. Hit ENTER
-4. Type: `from selenium import webdriver`
-5. Hit ENTER
-
-If this command executes with no errors, Selenium has been installed correctly!
-
-### Install Pandas
-Pandas is used to hold large amounts of datas in an efficient and easy to use format.
-
-Before installing Pandas, ensure you have pip installed
-
-1. Open a terminal
-2. Type this command: `pip install pandas`
-3. Hit ENTER
-4. To ensure pandas is installed correctly, type this command `python`
-5. Hit ENTER
-6. Type this command `import pandas`
-7. Hit ENTER
-
-If Pandas is installed correctly, there will be no error messages
-
-### Install Matplotlib
-Matplotlib is used to plot the data. Think of XMing as the whiteboard, and Matplotlib as the marker.
-
-1. Open a terminal
-2. Type this command: `python -m pip install -U pip`
-3. Hit ENTER
-4. Type this command: `python -m pip install -U matplotlib`
-5. To ensure Matplotlib is installed correctly, type this command `python`
-6. Hit ENTER
-7. Type this command `import matplotlib`
-8. Hit ENTER
-
-If Matplotlib is installed correctly, there will be no error messages
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
 
 
-# Running the program
-Now that we have all of the libraries downloaded, we are able to start gathering and processing data!
-## How to run the program
 
-### Download the source code
-1. Navigate to this [link](https://github.com/kingan1/Housing-data-Visualization)
-2. Clone/Download the repository
+## Customizing
 
-### Run redfin.py
+### Configuration variables
 
-1. Open a terminal
-2. Navigate to where you downloaded the repository
-3. Type this command: `python redfin.py`
-4. Hit ENTER
+Minimal will respect the following variables, if set in your site's `_config.yml`:
 
-The output should be: `done`
- + `redfin.py` creates a web crawler, initialized to Redfins page for the RDU area.
- + The program then expands the area, clearing all filters as well.
- + The program then downloads a .csv file, renaming it to `file.csv` so it is easier for the next program to find
- + At the end of running `redfin.py`, you will have a new file in your folder titled `file.csv`
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
+```
 
-### Run image.py
+Additionally, you may choose to set the following optional variables:
 
-Prerequisites: `redfin.py` has been executed and you have a `file.csv` file in your folder
+```yml
+logo: [Location of the logo]
+show_downloads: ["true" or "false" to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
+```
 
-1. Open a terminal
-2. Navigate to where you downloaded the repository
-3. Type this command: `python image.py`
-4. Hit ENTER
+### Stylesheet
 
-Multiple windows should open, all with different visualizations.
-  + `image.py` takes in `file.csv` from the previous step, and creates several visualizations
-  + These visualizations help you understand what the data represents, and explores different types of visuals
-  
-# FAQ
+If you'd like to add your own custom styles:
 
-If you encounter any issues with installation or running the program, linked below are frequently asked questions
-+ [FAQ for Selenium](https://www.seleniumhq.org/support/)
-+ [FAQ for Xming](http://www.straightrunning.com/XmingNotes/trouble.php)
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
 
-# Want to contribute?
-+ [Issue tracker](https://github.com/kingan1/Housing-data-Visualization/issues)
-+ [Source code](https://github.com/kingan1/Housing-data-Visualization)
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-# License
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
+### Layouts
+
+If you'd like to change the theme's HTML layout:
+
+1. [Copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+2. Create a file called `/_layouts/default.html` in your site
+3. Paste the default layout content copied in the first step
+4. Customize the layout as you'd like
+
+## Roadmap
+
+See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
+
+## Project philosophy
+
+The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+
+## Contributing
+
+Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+
+### Previewing the theme locally
+
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
+
+1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+
+### Running tests
+
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
