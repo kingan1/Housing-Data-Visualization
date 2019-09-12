@@ -33,7 +33,16 @@ h2 {
 h3, h4, h5, h6 {
   color:#494949;
 }
-
+.mainHeading {
+  margin-bottom: 3px;
+}
+.subHeading {
+  margin-bottom: 3px;
+  text-indent: 20px;
+}
+.subHeading a {
+  color: gray;
+}
 a {
   color:#267CB9;
   text-decoration:none;
