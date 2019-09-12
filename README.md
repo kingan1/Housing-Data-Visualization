@@ -19,7 +19,7 @@ This is documentation for the Housing Visualization project, aimed to help realt
 ## From image.py
 ![Image of redfin](/image.png)
 
-# Getting Started
+# [Getting Started](#getting-started)
 To be able to run the program, a few libraries need to be installed beforehand.
 
 ## Library installations
