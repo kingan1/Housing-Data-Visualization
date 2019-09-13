@@ -30,12 +30,11 @@ This image is an example visual from `image.py`. `image.py` takes in the file cr
 This image is an summarization of homes by latitude and longitude, where each dot represents one house. Another dimension is added, adding a color gradient for the cost of each home. This produces a map that displays both the spread of homes and average cost per region.
 ![Image of redfin](/image.png)
 
-# <span style="color:black">[Getting Started](#getting-started)</span>,
+# [Getting Started](#getting-started)
 To be able to run the program, a few libraries need to be installed beforehand.
 
-## Library installations
 
-### <a href = "#install-python"><font color = "black"> Install Python</font></a>
+## [Install Python](#install-python)
 Python is the underlying language of this program. To be able to run anything, Python must be installed.
 1. Follow this [link](https://www.python.org/downloads/release/python-367).
 2. Navigate to the link that says `Python 3.6.7`
@@ -50,7 +49,7 @@ Python is the underlying language of this program. To be able to run anything, P
 ![Image of Python](/pythonversion.png)   
 As long as the version is above 3.6, the program will function correctly
 
-### [Install XMing](#install-xming)
+## [Install XMing](#install-xming)
 XMing is used as a "whiteboard" for our visualizations.
 1. Navigate to this [link](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download)
 2. Wait for 5 seconds for the download to begin.
@@ -64,7 +63,7 @@ To confirm XMing was downloaded correctly, follow these steps:
 ![Image of XMing](/xming.png)
 
 
-### [Install Selenium](#install-selenium)
+## [Install Selenium](#install-selenium)
 Selenium is used to scrape websites, where we get our housing data from.
 1. Navigate to this [link](https://selenium-python.readthedocs.io/installation.html)
 2. Open a terminal
@@ -83,7 +82,7 @@ To confirm Selenium was downloaded correctly, follow these steps
 6. Verify the command executed with no errors
 ![Image of Selenium](/selenium.png)
 
-### [Install Pandas](#install-pandas)
+## [Install Pandas](#install-pandas)
 Pandas is used to hold large amounts of datas in an efficient and easy to use format.
 
 Before installing Pandas, ensure you have pip installed
@@ -98,7 +97,7 @@ Before installing Pandas, ensure you have pip installed
 8. Verify the command executed with no errors
 ![Image of Pandas](/pandas.png)
 
-### [Install Matplotlib](#install-matplotlib)
+## [Install Matplotlib](#install-matplotlib)
 Matplotlib is used to plot the data. Think of XMing as the whiteboard, and Matplotlib as the marker.
 
 1. Open a terminal
@@ -114,13 +113,12 @@ Matplotlib is used to plot the data. Think of XMing as the whiteboard, and Matpl
 
 # [Running the program](#running-the-program)
 Now that we have all of the libraries downloaded, we are able to start gathering and processing data!
-## How to run the program
 
-### [Download the source code](#download-source-code)
+## [Download the source code](#download-source-code)
 1. Navigate to this [link](https://github.com/kingan1/Housing-data-Visualization)
 2. Clone/Download the repository
 
-### [Run redfin.py](#run-redfin)
+## [Run redfin.py](#run-redfin)
 
 1. Open a terminal
 2. Navigate to where you downloaded the repository
@@ -135,7 +133,7 @@ The output should be: `done`
  + The program then downloads a .csv file, renaming it to `file.csv` so it is easier for the next program to find
  + At the end of running `redfin.py`, you will have a new file in your folder titled `file.csv`
 
-### [Run image.py](#run-image)
+## [Run image.py](#run-image)
 
 Prerequisites: `redfin.py` has been executed and you have a `file.csv` file in your folder
 
@@ -148,7 +146,7 @@ Multiple windows should open, all with different visualizations.
   + `image.py` takes in `file.csv` from the previous step, and creates several visualizations
   + These visualizations help you understand what the data represents, and explores different types of visuals
   
-#### [For detailed information about each visual, click here](/visualInfo.html)
+### [For detailed information about each visual, click here](/visualInfo.html)
   
 # [FAQ](#faq)
 
@@ -156,7 +154,8 @@ If you encounter any issues with installation or running the program, linked bel
 + [FAQ for Selenium](https://www.seleniumhq.org/support/)
 + [FAQ for Xming](http://www.straightrunning.com/XmingNotes/trouble.php)
 
-# [Want to contribute?](#contribute)
+# [Want to contribute](#contribute)
+
 + [Issue tracker](https://github.com/kingan1/Housing-data-Visualization/issues)
 + [Source code](https://github.com/kingan1/Housing-data-Visualization)
 
