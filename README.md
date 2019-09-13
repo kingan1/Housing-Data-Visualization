@@ -148,7 +148,7 @@ Multiple windows should open, all with different visualizations.
   + `image.py` takes in `file.csv` from the previous step, and creates several visualizations
   + These visualizations help you understand what the data represents, and explores different types of visuals
   
-### [For detailed information about each visual, click here](/visualInfo.html)
+### [For detailed information about each visual, click here](/Housing-Data-Visualization/visualInfo.html)
   
 # [FAQ](#faq)
 
