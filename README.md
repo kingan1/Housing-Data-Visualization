@@ -30,12 +30,12 @@ This image is an example visual from `image.py`. `image.py` takes in the file cr
 This image is an summarization of homes by latitude and longitude, where each dot represents one house. Another dimension is added, adding a color gradient for the cost of each home. This produces a map that displays both the spread of homes and average cost per region.
 ![Image of redfin](/image.png)
 
-# [Getting Started](#getting-started)
+# <span style="color:black">[Getting Started](#getting-started)</span>,
 To be able to run the program, a few libraries need to be installed beforehand.
 
 ## Library installations
 
-### [Install Python](#install-python)
+### <a href = "#install-python"><font color = "black"> Install Python</font></a>
 Python is the underlying language of this program. To be able to run anything, Python must be installed.
 1. Follow this [link](https://www.python.org/downloads/release/python-367).
 2. Navigate to the link that says `Python 3.6.7`
