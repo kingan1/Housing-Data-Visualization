@@ -17,18 +17,19 @@ Instead of having to manually parse thousands of homes from [Redfin](https://www
   
 # [Sample Output](#sample-output)
 
-## From redfin.py
+![Image of redfin](/redfins.png)
+
 This picture is a screenshot of the output file, `file.csv`. This Python file scrapes Redfin.com, and downloads information about housing into a .csv file for later use. `redfin.py` transforms the process of having to manually copy data from each page into an automated process that takes under 30 seconds.
 
 The .csv file lists the Sale Type, Property Type, Address, City, and State. There are plenty of more attributes of each home, but these are just the first few.
 
-![Image of redfin](/redfins.png)
 
-## From image.py
+
+![Image of redfin](/image.png)
+
 This image is an example visual from `image.py`. `image.py` takes in the file created in `redfin.py` and processes the data. It then creates 6 visuals exploring such data.
 
 This image is an summarization of homes by latitude and longitude, where each dot represents one house. Another dimension is added, adding a color gradient for the cost of each home. This produces a map that displays both the spread of homes and average cost per region.
-![Image of redfin](/image.png)
 
 # [Getting Started](#getting-started)
 To be able to run the program, a few libraries need to be installed beforehand.
@@ -60,6 +61,7 @@ To confirm XMing was downloaded correctly, follow these steps:
 1. Search for "XMing" on your computer
 2. Click on the XMing Executable
 3. Verify the XMing symbol is present on the lower right hand side of your screen
+
 ![Image of XMing](/xming.png)
 
 
