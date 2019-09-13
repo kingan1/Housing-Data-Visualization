@@ -15,7 +15,7 @@ Instead of having to manually parse thousands of homes from [Redfin](https://www
 + Beginners to web scraping or data visualization who want to see how to scrape and visualize data
 + Python developers who want to explore new libraries and see how they are effectively used
   
-# Sample Output
+# [Sample Output](#sample-output)
 
 ## From redfin.py
 This picture is a screenshot of the output file, `file.csv`. This Python file scrapes Redfin.com, and downloads information about housing into a .csv file for later use. `redfin.py` transforms the process of having to manually copy data from each page into an automated process that takes under 30 seconds.
@@ -35,9 +35,9 @@ To be able to run the program, a few libraries need to be installed beforehand.
 
 ## Library installations
 
-### Install [Python](https://www.python.org/downloads/release/python-367)
+### [Install Python](#install-python)
 Python is the underlying language of this program. To be able to run anything, Python must be installed.
-1. Follow the link above.
+1. Follow this [link](https://www.python.org/downloads/release/python-367).
 2. Navigate to the link that says `Python 3.6.7`
 3. Select `download`
 4. Open a terminal
@@ -50,9 +50,9 @@ Python is the underlying language of this program. To be able to run anything, P
 ![Image of Python](/pythonversion.png)   
 As long as the version is above 3.6, the program will function correctly
 
-### Install [XMing](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download)
+### [Install XMing](#install-xming)
 XMing is used as a "whiteboard" for our visualizations.
-1. Navigate to the link above
+1. Navigate to this [link](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download)
 2. Wait for 5 seconds for the download to begin.
 3. Open the executable
 4. Complete the setup wizard
@@ -64,9 +64,9 @@ To confirm XMing was downloaded correctly, follow these steps:
 ![Image of XMing](/xming.png)
 
 
-### Install [Selenium](https://selenium-python.readthedocs.io/installation.html)
+### [Install Selenium](#install-selenium)
 Selenium is used to scrape websites, where we get our housing data from.
-1. Navigate to the link above
+1. Navigate to this [link](https://selenium-python.readthedocs.io/installation.html)
 2. Open a terminal
     + If pip is not installed on your computer, it can be installed [here](https://pip.pypa.io/en/stable/installing)
 3. Type this command: `pip install selenium`
@@ -83,7 +83,7 @@ To confirm Selenium was downloaded correctly, follow these steps
 6. Verify the command executed with no errors
 ![Image of Selenium](/selenium.png)
 
-### Install Pandas
+### [Install Pandas](#install-pandas)
 Pandas is used to hold large amounts of datas in an efficient and easy to use format.
 
 Before installing Pandas, ensure you have pip installed
@@ -98,7 +98,7 @@ Before installing Pandas, ensure you have pip installed
 8. Verify the command executed with no errors
 ![Image of Pandas](/pandas.png)
 
-### Install Matplotlib
+### [Install Matplotlib](#install-matplotlib)
 Matplotlib is used to plot the data. Think of XMing as the whiteboard, and Matplotlib as the marker.
 
 1. Open a terminal
@@ -112,15 +112,15 @@ Matplotlib is used to plot the data. Think of XMing as the whiteboard, and Matpl
 9. Verify the command executed with no errors
 ![Image of Matplotlib](/matplotlib.png)
 
-# Running the program
+# [Running the program](#running-the-program)
 Now that we have all of the libraries downloaded, we are able to start gathering and processing data!
 ## How to run the program
 
-### Download the source code
+### [Download the source code](#download-source-code)
 1. Navigate to this [link](https://github.com/kingan1/Housing-data-Visualization)
 2. Clone/Download the repository
 
-### Run redfin.py
+### [Run redfin.py](#run-redfin)
 
 1. Open a terminal
 2. Navigate to where you downloaded the repository
@@ -135,7 +135,7 @@ The output should be: `done`
  + The program then downloads a .csv file, renaming it to `file.csv` so it is easier for the next program to find
  + At the end of running `redfin.py`, you will have a new file in your folder titled `file.csv`
 
-### Run image.py
+### [Run image.py](#run-image)
 
 Prerequisites: `redfin.py` has been executed and you have a `file.csv` file in your folder
 
@@ -150,15 +150,15 @@ Multiple windows should open, all with different visualizations.
   
 #### [For detailed information about each visual, click here](/visualInfo.html)
   
-# FAQ
+# [FAQ](#faq)
 
 If you encounter any issues with installation or running the program, linked below are frequently asked questions
 + [FAQ for Selenium](https://www.seleniumhq.org/support/)
 + [FAQ for Xming](http://www.straightrunning.com/XmingNotes/trouble.php)
 
-# Want to contribute?
+# [Want to contribute?](#contribute)
 + [Issue tracker](https://github.com/kingan1/Housing-data-Visualization/issues)
 + [Source code](https://github.com/kingan1/Housing-data-Visualization)
 
-# License
+# [License](#license)
 This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
