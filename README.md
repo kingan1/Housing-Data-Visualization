@@ -1,16 +1,16 @@
-# Housing Data Visualization
+# [Housing Data Visualization](#home)
 This is documentation for the Housing Visualization project, a beginners introduction to web scraping and data visualization. 
 
 [Web scraping](https://en.wikipedia.org/wiki/Web_scraping) can take on many forms, but at its minimum is defined as navigating websites by using a "robot" (browser controlled by a program) to extract large amounts of information from web pages.
 
 Instead of having to manually parse thousands of homes from [Redfin](https://www.redfin.com/), this program automatically scrapes the website, downloads the data, and visualizes it in an easy to understand format.
 
-## Why is this important?
+## [Why is this important?](#importance)
 + Helps clear up complicated housing data
 + Condenses 10K rows of data into 6 easy to understand visuals
 + Explores how web scraping can be used in conjunction with data science/processing
 
-## Who should use this?
+## [Who should use this?](#who-should-use)
 + Users who want to explore different visuals
 + Beginners to web scraping or data visualization who want to see how to scrape and visualize data
 + Python developers who want to explore new libraries and see how they are effectively used
