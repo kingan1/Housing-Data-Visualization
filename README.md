@@ -1,5 +1,9 @@
 # Housing Data Visualization
-This is documentation for the Housing Visualization project, a beginner project to web scraping and data visualization. Instead of having to manually parse thousands of homes from Redfin (link), this program automatically scrapes the website, downloads the data, and visualizes it in an easy to understand format.
+This is documentation for the Housing Visualization project, a beginners introduction to web scraping and data visualization. 
+
+[Web scraping](https://en.wikipedia.org/wiki/Web_scraping) can take on many forms, but at its minimum is defined as navigating websites by using a "robot" (browser controlled by a program) to extract large amounts of information from web pages.
+
+Instead of having to manually parse thousands of homes from [Redfin](https://www.redfin.com/), this program automatically scrapes the website, downloads the data, and visualizes it in an easy to understand format.
 
 ## Why is this important?
 + Helps clear up complicated housing data
@@ -8,19 +12,22 @@ This is documentation for the Housing Visualization project, a beginner project 
 
 ## Who should use this?
 + Users who want to explore different visuals
-+ Realtors who want to better understand housing in the RDU area
-+ Programmers who want to learn more about data visualization or web scraping
++ Beginners to web scraping or data visualization who want to see how to scrape and visualize data
++ Python developers who want to explore new libraries and see how they are effectively used
   
 # Sample Output
 
 ## From redfin.py
 This picture is a screenshot of the output file, `file.csv`. This Python file scrapes Redfin.com, and downloads information about housing into a .csv file for later use. `redfin.py` transforms the process of having to manually copy data from each page into an automated process that takes under 30 seconds.
+
+The .csv file lists the Sale Type, Property Type, Address, City, and State. There are plenty of more attributes of each home, but these are just the first few.
+
 ![Image of redfin](/redfins.png)
 
 ## From image.py
 This image is an example visual from `image.py`. `image.py` takes in the file created in `redfin.py` and processes the data. It then creates 6 visuals exploring such data.
 
-This image is an exploration of houses by latitude and longitude. Each dot represents one house. We then take it one step further, adding a color gradient for the cost of the house. This produces a map that displays both the spread of homes and average prices by latitude.
+This image is an summarization of homes by latitude and longitude, where each dot represents one house. Another dimension is added, adding a color gradient for the cost of each home. This produces a map that displays both the spread of homes and average cost per region.
 ![Image of redfin](/image.png)
 
 # [Getting Started](#getting-started)
@@ -35,11 +42,12 @@ Python is the underlying language of this program. To be able to run anything, P
 3. Select `download`
 4. Open a terminal
 5. Type
-  `$ python version`
+  `python --version`
 6. Hit ENTER
 7. The output should be 
    `Python 3.6.7`
    
+![Image of Python](/pythonversion.png)   
 As long as the version is above 3.6, the program will function correctly
 
 ### Install [XMing](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download)
@@ -48,6 +56,13 @@ XMing is used as a "whiteboard" for our visualizations.
 2. Wait for 5 seconds for the download to begin.
 3. Open the executable
 4. Complete the setup wizard
+
+To confirm XMing was downloaded correctly, follow these steps:
+1. Search for "XMing" on your computer
+2. Click on the XMing Executable
+3. Verify the XMing symbol is present on the lower right hand side of your screen
+![Image of XMing](/xming.png)
+
 
 ### Install [Selenium](https://selenium-python.readthedocs.io/installation.html)
 Selenium is used to scrape websites, where we get our housing data from.
@@ -65,8 +80,8 @@ To confirm Selenium was downloaded correctly, follow these steps
 3. Hit ENTER
 4. Type: `from selenium import webdriver`
 5. Hit ENTER
-
-If this command executes with no errors, Selenium has been installed correctly!
+6. Verify the command executed with no errors
+![Image of Selenium](/selenium.png)
 
 ### Install Pandas
 Pandas is used to hold large amounts of datas in an efficient and easy to use format.
@@ -80,8 +95,8 @@ Before installing Pandas, ensure you have pip installed
 5. Hit ENTER
 6. Type this command `import pandas`
 7. Hit ENTER
-
-If Pandas is installed correctly, there will be no error messages
+8. Verify the command executed with no errors
+![Image of Pandas](/pandas.png)
 
 ### Install Matplotlib
 Matplotlib is used to plot the data. Think of XMing as the whiteboard, and Matplotlib as the marker.
@@ -94,9 +109,8 @@ Matplotlib is used to plot the data. Think of XMing as the whiteboard, and Matpl
 6. Hit ENTER
 7. Type this command `import matplotlib`
 8. Hit ENTER
-
-If Matplotlib is installed correctly, there will be no error messages
-
+9. Verify the command executed with no errors
+![Image of Matplotlib](/matplotlib.png)
 
 # Running the program
 Now that we have all of the libraries downloaded, we are able to start gathering and processing data!
@@ -112,6 +126,8 @@ Now that we have all of the libraries downloaded, we are able to start gathering
 2. Navigate to where you downloaded the repository
 3. Type this command: `python redfin.py`
 4. Hit ENTER
+
+![Image of Redfin Running](/redfinsample.png)
 
 The output should be: `done`
  + `redfin.py` creates a web crawler, initialized to Redfins page for the RDU area.
@@ -131,6 +147,8 @@ Prerequisites: `redfin.py` has been executed and you have a `file.csv` file in y
 Multiple windows should open, all with different visualizations.
   + `image.py` takes in `file.csv` from the previous step, and creates several visualizations
   + These visualizations help you understand what the data represents, and explores different types of visuals
+  
+#### [For detailed information about each visual, click here](/visualInfo.html)
   
 # FAQ
 
