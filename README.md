@@ -31,7 +31,7 @@ This image is an example visual from `image.py`. `image.py` takes in the file cr
 
 This image is an summarization of homes by latitude and longitude, where each dot represents one house. Another dimension is added, adding a color gradient for the cost of each home. This produces a map that displays both the spread of homes and average cost per region.
 
-### [For detailed information about each visual, click here](/Housing-data-Visualization/visualInfo)
+### [For detailed information about each visual, click here](/Housing-Data-Visualization/visualInfo)
 
 # [Getting Started](#getting-started)
 To be able to run the program, a few libraries need to be installed beforehand.
