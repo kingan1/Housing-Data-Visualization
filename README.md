@@ -19,7 +19,7 @@ Instead of having to manually parse thousands of homes from [Redfin](https://www
 
 ![Image of redfin](/redfins.png)
 
-This picture is a screenshot of the output file, `file.csv`. This Python file scrapes Redfin.com, and downloads information about housing into a .csv file for later use. `redfin.py` transforms the process of having to manually copy data from each page into an automated process that takes under 30 seconds.
+This picture is a screenshot of the output file, `file.csv`. This Python file scrapes Redfin.com and downloads information about housing into a .csv file for later use. `redfin.py` transforms the process of having to manually copy data from each page into an automated process that takes under 30 seconds.
 
 The .csv file lists the Sale Type, Property Type, Address, City, and State. There are plenty of more attributes of each home, but these are just the first few.
 
@@ -29,7 +29,7 @@ The .csv file lists the Sale Type, Property Type, Address, City, and State. Ther
 
 This image is an example visual from `image.py`. `image.py` takes in the file created in `redfin.py` and processes the data. It then creates 6 visuals exploring such data.
 
-This image is an summarization of homes by latitude and longitude, where each dot represents one house. Another dimension is added, adding a color gradient for the cost of each home. This produces a map that displays both the spread of homes and average cost per region.
+This visualization is a summarization of homes by latitude and longitude, where each dot represents one house. Another dimension is added, adding a color gradient for the cost of each home. This produces a map that displays both the spread of homes and the average cost per region.
 
 ### [For detailed information about each visual, click here](/Housing-Data-Visualization/visualInfo)
 
@@ -39,14 +39,16 @@ To be able to run the program, a few libraries need to be installed beforehand.
 
 ## [Install Python](#install-python)
 Python is the underlying language of this program. To be able to run anything, Python must be installed.
-1. Follow this [link](https://www.python.org/downloads/release/python-367).
+1. Follow this [link](https://www.python.org/downloads/release/python-367)
 2. Navigate to the link that says `Python 3.6.7`
 3. Select `download`
-4. Open a terminal
-5. Type
+
+To verify Python was installed correctly, follow these steps:
+1. Open a terminal
+2. Type
   `python --version`
-6. Hit ENTER
-7. The output should be 
+3. Hit ENTER
+4. The output should be 
    `Python 3.6.7`
    
 ![Image of Python](/pythonversion.png)   
@@ -55,14 +57,14 @@ As long as the version is above 3.6, the program will function correctly
 ## [Install XMing](#install-xming)
 XMing is used as a "whiteboard" for our visualizations.
 1. Navigate to this [link](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download)
-2. Wait for 5 seconds for the download to begin.
+2. Wait for 5 seconds for the download to begin
 3. Open the executable
 4. Complete the setup wizard
 
 To confirm XMing was downloaded correctly, follow these steps:
 1. Search for "XMing" on your computer
 2. Click on the XMing Executable
-3. Verify the XMing symbol is present on the lower right hand side of your screen
+3. Verify the XMing symbol is present in the lower right-hand side of your screen
 
 ![Image of XMing](/xming.png)
 
@@ -70,14 +72,14 @@ To confirm XMing was downloaded correctly, follow these steps:
 ## [Install Selenium](#install-selenium)
 Selenium is used to scrape websites, where we get our housing data from.
 1. Navigate to this [link](https://selenium-python.readthedocs.io/installation.html)
-2. Open a terminal
+2. Navigate to section 1.3
+3. Download the Firefox link
+4. Open a terminal
     + If pip is not installed on your computer, it can be installed [here](https://pip.pypa.io/en/stable/installing)
-3. Type this command: `pip install selenium`
-4. Hit ENTER
-5. Navigate to section 1.3 from the link above
-6. Download the Firefox link
+5. Type this command: `pip install selenium`
+6. Hit ENTER
 
-To confirm Selenium was downloaded correctly, follow these steps
+To confirm Selenium was downloaded correctly, follow these steps:
 1. Open a terminal
 2. Type: `python`
 3. Hit ENTER
@@ -87,18 +89,21 @@ To confirm Selenium was downloaded correctly, follow these steps
 ![Image of Selenium](/selenium.png)
 
 ## [Install Pandas](#install-pandas)
-Pandas is used to hold large amounts of datas in an efficient and easy to use format.
+Pandas is used to hold large amounts of data in an efficient and easy to use format.
 
-Before installing Pandas, ensure you have pip installed
+Before installing Pandas, ensure you have pip installed.
 
 1. Open a terminal
 2. Type this command: `pip install pandas`
 3. Hit ENTER
-4. To ensure pandas is installed correctly, type this command `python`
+
+To ensure pandas is installed correctly, follow these steps:
+1. Open a terminal
+2. Type this command `python`
+3. Hit ENTER
+4. Type this command `import pandas`
 5. Hit ENTER
-6. Type this command `import pandas`
-7. Hit ENTER
-8. Verify the command executed with no errors
+6. Verify the command executed with no errors
 ![Image of Pandas](/pandas.png)
 
 ## [Install Matplotlib](#install-matplotlib)
@@ -108,15 +113,18 @@ Matplotlib is used to plot the data. Think of XMing as the whiteboard, and Matpl
 2. Type this command: `python -m pip install -U pip`
 3. Hit ENTER
 4. Type this command: `python -m pip install -U matplotlib`
-5. To ensure Matplotlib is installed correctly, type this command `python`
-6. Hit ENTER
-7. Type this command `import matplotlib`
-8. Hit ENTER
-9. Verify the command executed with no errors
+5. Hit ENTER
+
+To ensure Matplotlib is installed correctly, follow these steps:
+1. Type this command `python`
+2. Hit ENTER
+3. Type this command `import matplotlib`
+4. Hit ENTER
+5. Verify the command executed with no errors
 ![Image of Matplotlib](/matplotlib.png)
 
 # [Running the program](#running-the-program)
-Now that we have all of the libraries downloaded, we are able to start gathering and processing data!
+Now that we have all of the libraries downloaded, we can start gathering and processing data!
 
 ## [Download the source code](#download-source-code)
 1. Navigate to this [link](https://github.com/kingan1/Housing-data-Visualization)
