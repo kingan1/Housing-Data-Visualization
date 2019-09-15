@@ -1,7 +1,7 @@
 # [Housing Data Visualization](#home)
 This is documentation for the Housing Visualization project, a beginners introduction to web scraping and data visualization. 
 
-[Web scraping](https://en.wikipedia.org/wiki/Web_scraping) can take on many forms, but at its minimum is defined as navigating websites by using a "robot" (browser controlled by a program) to extract large amounts of information from web pages.
+[Web scraping](https://en.wikipedia.org/wiki/Web_scraping) is defined as navigating websites by using a "robot" (browser controlled by a program) to extract large amounts of information from web pages.
 
 Instead of having to manually parse thousands of homes from [Redfin](https://www.redfin.com/), this program automatically scrapes the website, downloads the data, and visualizes it in an easy to understand format.
 
