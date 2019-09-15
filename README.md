@@ -25,7 +25,7 @@ The .csv file lists the Sale Type, Property Type, Address, City, and State. Ther
 
 
 
-![Image of redfin](/image.png)
+![Image of redfin](/gradient.png)
 
 This image is an example visual from `image.py`. `image.py` takes in the file created in `redfin.py` and processes the data. It then creates 6 visuals exploring such data.
 
